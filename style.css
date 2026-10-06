@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  /* 🌟 PALETTE HIJAU NEON + HITAM */
+  --hijau-neon: #39FF14;
+  --hijau-terang: #00FF7F;
+  --hijau-lembut: #7FFF00;
+  --hijau-gelap: #008833;
+  --hitam: #000000;
+  --hitam-lembut: #121212;
+  --abu-hitam: #1F1F1F;
+  --putih: #FFFFFF;
+  --teks-abu: #B0B0B0;
+  --bayangan-neon: 0 0 15px #39FF14, 0 0 30px rgba(57, 255, 20, 0.4);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--hitam);
+  color: var(--putih);
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 5%;
+}
+
+/* Header - Persis seperti foto */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--hitam-lembut);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  z-index: 100;
+  border-bottom: 2px solid var(--hijau-neon);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(57, 255, 20, 0.2);
+}
+
+.logo {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--hijau-neon);
+  line-height: 1.2;
+  text-shadow: 0 0 10px var(--hijau-neon);
+}
+
+#menu-icon {
+  font-size: 3.5rem;
+  color: var(--hijau-neon);
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navbar a {
+  font-size: 1.8rem;
+  color: var(--putih);
+  font-weight: 500;
+  transition: 0.3s ease;
+  text-align: right;
+}
+
+.navbar a:hover {
+  color: var(--hijau-neon);
+  text-shadow: 0 0 8px var(--hijau-neon);
+}
+
+/* Home - Persis seperti foto */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 14rem;
+  gap: 4rem;
+  background: linear-gradient(90deg, #000000 0%, #0A2E0A 100%);
+}
+
+.home-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--hijau-neon);
+  box-shadow: 0 0 20px var(--hijau-neon), inset 0 0 15px rgba(57, 255, 20, 0.3);
+}
+
+.home-content h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--putih);
+  text-shadow: 0 0 10px var(--hijau-neon);
+}
+
+.sub-judul {
+  font-size: 3.5rem;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+span {
+  color: var(--hijau-neon);
+  font-weight: 700;
+  text-shadow: 0 0 8px var(--hijau-neon);
+}
+
+.deskripsi {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 500px;
+  color: var(--teks-abu);
+}
+
+.social-media {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.social-media a {
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 2px solid var(--hijau-neon);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: var(--hijau-neon);
+  background: transparent;
+  transition: 0.3s ease;
+  box-shadow: 0 0 8px rgba(57, 255, 20, 0.3);
+}
+
+.social-media a:hover {
+  background: var(--hijau-neon);
+  color: var(--hitam);
+  box-shadow: 0 0 20px var(--hijau-neon);
+  transform: translateY(-3px);
+}
+
+.btn {
+  padding: 1.2rem 3.5rem;
+  background: transparent;
+  border: 2px solid var(--hijau-neon);
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--hijau-neon);
+  display: inline-block;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+}
+
+.btn:hover {
+  background: var(--hijau-neon);
+  color: var(--hitam);
+  box-shadow: 0 0 25px var(--hijau-neon);
+}
+
+/* About */
+.about {
+  background: var(--abu-hitam);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.heading {
+  font-size: 6rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: var(--putih);
+}
+
+.heading span {
+  color: var(--hijau-neon);
+}
+
+.about-content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--putih);
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  max-width: 550px;
+  color: var(--teks-abu);
+}
+
+.about-img img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--hijau-neon);
+  box-shadow: 0 0 20px var(--hijau-neon);
+}
+
+/* Services / Keahlian */
+.services {
+  background: var(--hitam);
+}
+
+.services .heading {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 5.5rem;
+  color: var(--putih);
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.services-box {
+  background: var(--abu-hitam);
+  padding: 4rem 3rem;
+  border-radius: 2rem;
+  border: 2px solid var(--hijau-neon);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.services-box:hover {
+  background: var(--hijau-gelap);
+  border-color: var(--hijau-terang);
+  box-shadow: 0 0 20px var(--hijau-neon);
+}
+
+.services-box i {
+  font-size: 5rem;
+  color: var(--hijau-neon);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 8px var(--hijau-neon);
+}
+
+.services-box:hover i {
+  color: var(--putih);
+}
+
+.services-box h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--putih);
+}
+
+.services-box p {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: var(--teks-abu);
+}
+
+/* Contact */
+.contact {
+  background: var(--abu-hitam);
+}
+
+.contact .heading {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--putih);
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid var(--hijau-neon);
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  background: var(--hitam);
+  color: var(--putih);
+  margin-bottom: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  box-shadow: 0 0 15px var(--hijau-neon);
+  border-color: var(--hijau-terang);
+}
+
+.contact textarea {
+  min-height: 150px;
+  resize: none;
+  margin-bottom: 2rem;
+}
+
+.contact .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
